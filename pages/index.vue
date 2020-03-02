@@ -33,17 +33,17 @@ export default {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
+  font-size: 40px;
+  color: #F36161;
   letter-spacing: 1px;
 }
 
 .subtitle {
   font-family: Roboto, normal;
-  font-weight: 200;
-  color: #666;
+  font-weight: 100;
+  font-size: 20px;
+  color: #CCC;
   padding-top: 25px;
-  word-spacing: 5px;
   padding-bottom: 15px;
 }
 </style>
