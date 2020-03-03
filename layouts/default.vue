@@ -3,7 +3,23 @@
     <nuxt />
   </div>
 </template>
-
+<script>
+export default {
+  head() {
+    return {
+      title: 'Martín Riva'
+      /*meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'My custom description'
+        }
+      ]*/
+    }
+  }
+}
+</script>
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -14,7 +30,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-color: #231F20;
+  background-color: #231f20;
   box-sizing: border-box;
 }
 
@@ -25,32 +41,34 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+a {
   text-decoration: none;
-  padding: 10px 30px;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+.title {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  display: block;
+  font-weight: 100;
+  font-size: 40px;
+  color: #f36161;
+  letter-spacing: 1px;
+  padding-top: 30px;
 }
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.subtitle {
+  font-family: Roboto, normal;
+  font-weight: 100;
+  font-size: 20px;
+  color: #ccc;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 </style>
