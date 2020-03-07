@@ -6,7 +6,6 @@
   animation: 1s appear;
   margin: auto;
   height: 200px;
-  max-width: 90%;
 }
 
 @keyframes appear {
