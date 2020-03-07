@@ -10,20 +10,7 @@
 </template>
 <script>
 export default {
-  props: ['error'],
-  head() {
-    return {
-      title: 'Martín Riva'
-      /*meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'My custom description'
-        }
-      ]*/
-    }
-  }
+  props: ['error']
 }
 </script>
 <style scoped>
@@ -31,6 +18,7 @@ img {
   animation: 1s appear;
   margin: auto;
   height: 200px;
+  max-width: 90%;
 }
 @keyframes appear {
   0% {
