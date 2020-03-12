@@ -8,11 +8,13 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   props: ['error']
 }
 </script>
+
 <style scoped>
 img {
   animation: 1s appear;

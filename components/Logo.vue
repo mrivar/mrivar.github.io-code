@@ -1,6 +1,7 @@
 <template>
   <img class="Logo" src="@/static/logo.svg" />
 </template>
+
 <style>
 .Logo {
   animation: 1s appear;
