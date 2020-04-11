@@ -1,9 +1,9 @@
 <template>
-  <img class="Logo" src="@/static/logo.svg" />
+  <img class="logo" src="@/static/logo.svg" />
 </template>
 
 <style>
-.Logo {
+.logo {
   animation: 1s appear;
   margin: auto;
   height: 200px;
