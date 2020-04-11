@@ -41,13 +41,15 @@ main {
 
 header {
   grid-area: header;
-  padding: 1.75rem 1rem .5rem;
+  padding: 1.5rem 0 .5rem;
   position: relative;
 }
 
 .main-container {
   grid-area: content;
-  min-height: 90vh;
+  margin: 0;
+  min-height: 85vh;
+  background-color: $light-light-gray;
 }
 
 footer {
