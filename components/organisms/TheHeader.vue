@@ -3,16 +3,31 @@
     <div class="header-container">
       <Logo />
       <slot></slot>
+      <TheNavbar :routes="routes" />
     </div>
   </header>
 </template>
 
 <script>
-import Logo from '~/components/atoms/Logo.vue'
+import Logo from '~/components/atoms/Logo.vue';
+import TheNavbar from '~/components/molecules/TheNavbar.vue';
+
+const routes = [
+  {
+    name: "About",
+    route: "/covid19/about"
+  }
+]
 
 export default {
   components: {
-    Logo
+    Logo,
+    TheNavbar
+  },
+  data() {
+    return {
+      routes
+    };
   }
 }
 </script>
@@ -25,9 +40,14 @@ header {
 
   & .header-container {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
   }
 
   & .logo {
+    margin: 0;
     max-height: 35px;
     cursor: pointer;
   }

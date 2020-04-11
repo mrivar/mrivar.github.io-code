@@ -19,7 +19,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap'
+          'https://fonts.googleapis.com/css?family=Roboto:100,400,500&display=swap'
       }
     ]
   },

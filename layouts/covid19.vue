@@ -1,6 +1,6 @@
 <template>
   <main>
-    <TheHeader />
+    <TheHeader/>
     <nuxt />
     <TheFooter />
   </main>

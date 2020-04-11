@@ -2,7 +2,20 @@
   <img class="logo" src="@/static/logo.svg" />
 </template>
 
-<style>
+<script>
+export default {
+  name: "Logo",
+  props: {
+    route: {
+      type: String,
+      default: "",
+      required: false
+    }
+  }
+}
+</script>
+
+<style scoped>
 .logo {
   animation: 1s appear;
   margin: auto;
