@@ -14,8 +14,12 @@ import TheNavbar from '~/components/molecules/TheNavbar.vue';
 
 const routes = [
   {
+    name: "Covid",
+    path: "/covid19/"
+  },
+  {
     name: "About",
-    route: "/covid19/about"
+    path: "/covid19/about"
   }
 ]
 

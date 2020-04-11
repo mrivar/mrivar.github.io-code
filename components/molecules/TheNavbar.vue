@@ -4,7 +4,7 @@
       v-for="route in routes"
       :key="route.name"
       :name="route.name"
-      :route="route.route"
+      :path="route.path"
     />
   </nav>
 </template>

@@ -1,10 +1,8 @@
 <template>
   <n-link
-    :to="route"
+    :to="path"
     class="navbar-item"
-  >
-    {{ name }}
-  </n-link>
+  >{{ name }}</n-link>
 </template>
 
 <script>
@@ -15,7 +13,7 @@ export default {
       type: String,
       required: true
     },
-    route: {
+    path: {
       type: String,
       default: "",
       required: true
@@ -28,14 +26,15 @@ export default {
 a {
   color: black;
   border-bottom: 0px solid;
+  margin-left: 10px;
 
   &:focus,
   &:hover,
-  & .nuxt-link-active {
+  &.nuxt-link-exact-active {
     font-weight: 500;
   }
 
-  & .nuxt-link-active {
+  &.nuxt-link-exact-active {
     border-bottom-width: 2px;
   }
 }
