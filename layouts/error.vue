@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="main-container">
     <div>
       <img src="@/static/404.svg" />
       <h1 v-if="error.statusCode === 404" class="title">Page not found</h1>
