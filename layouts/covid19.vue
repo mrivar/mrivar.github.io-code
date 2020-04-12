@@ -1,9 +1,8 @@
 <template>
   <main>
     <TheHeader />
-    <div class="main-container">
-      <nuxt />
-    </div>
+    <nuxt v-if="!$slots.default" />
+    <slot />
     <TheFooter />
   </main>
 </template>
@@ -33,7 +32,6 @@ main {
   background-color: $white;
   display: grid;
   grid-template-columns: minmax(1.875rem,1fr) minmax(auto,86.25rem) minmax(1.875rem,1fr);
-  grid-template-rows: -webkit-min-content -webkit-max-content -webkit-min-content;
   grid-template-rows: min-content max-content min-content;
   grid-template-areas:
       ". header ."
@@ -51,6 +49,7 @@ header {
   grid-area: content;
   margin: 0;
   min-height: 85vh;
+  padding: 20px;
   background-color: $light-light-gray;
 }
 
