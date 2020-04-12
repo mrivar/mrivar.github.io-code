@@ -1,7 +1,7 @@
 <template>
   <InfoBubble :title="title">
-    <span class="value">{{ value }}</span>
-    <span class="note" v-if="note">{{ note }}</span>
+    <p class="value">{{ value }}</p>
+    <p class="note" v-if="note">{{ note }}</p>
   </InfoBubble>
 </template>
 
@@ -35,6 +35,7 @@ export default {
 <style scoped>
 .value {
   font-size: 2.5rem;
+  margin-top: 50%;
 }
 
 .note {
