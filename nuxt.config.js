@@ -34,7 +34,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/element-ui'],
+  plugins: [
+    '@/plugins/element-ui',
+    { src: '@/plugins/vue-apexcharts', ssr: false }
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -51,9 +54,22 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, { isDev, isClient, isServer, loaders }) {
+      config.module.rules.push(
+        {
+          test: /\.csv$/,
+          loader: 'csv-loader',
+          options: {
+            dynamicTyping: true,
+            header: true,
+            skipEmptyLines: true
+          }
+        }
+      )
+    }
   },
   generate: {
+    // fix github 404.html
     fallback: true
   },
   router: {
