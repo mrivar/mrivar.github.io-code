@@ -30,8 +30,8 @@ export default {
 
   & .infobubble_title {
     position: absolute;
-    top: 8px;
-    left: 10px;
+    top: 12px;
+    left: 12px;
   }
 }
 
