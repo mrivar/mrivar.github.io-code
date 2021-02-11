@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-0",
-    "apexcharts": "^3.18.1",
+    "apexcharts": "^3.24.0",
     "csv-loader": "^3.0.2",
     "element-ui": "^2.4.11",
     "nuxt": "^2.0.0",
