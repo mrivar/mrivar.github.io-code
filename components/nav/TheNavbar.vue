@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import NavbarLink from '~/components/atoms/NavbarLink.vue';
+import NavbarLink from '~/components/nav/NavbarLink.vue';
 
 export default {
   name: "TheNavbar",

@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Logo from '~/components/atoms/Logo.vue';
+import Logo from '~/components/logo/Logo.vue';
 import TheNavbar from '~/components/molecules/TheNavbar.vue';
 
 const routes = [

@@ -1,10 +1,10 @@
 <template>
-  <img class="logo" src="@/static/logo.svg" />
+  <img class="logo" src="@/static/mr_logo.svg" />
 </template>
 
 <script>
 export default {
-  name: "Logo",
+  name: "OldLogo",
   props: {
     route: {
       type: String,
