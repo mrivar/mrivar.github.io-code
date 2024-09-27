@@ -15,12 +15,14 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .logo {
   animation: 1s appear;
   margin: auto;
-  height: 500px;
+  height: 75px;
   max-width: 90%;
+  //fill: $light-red;
+  filter: invert(60%) sepia(47%) saturate(3808%) hue-rotate(324deg) brightness(106%) contrast(91%);
 }
 
 @keyframes appear {

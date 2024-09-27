@@ -3,23 +3,27 @@
     <div class="header-container">
       <Logo />
       <slot></slot>
-      <TheNavbar :routes="routes" />
+      <TheNavbar class="navbar" :routes="routes" />
     </div>
   </header>
 </template>
 
 <script>
 import Logo from '~/components/logo/Logo.vue';
-import TheNavbar from '~/components/molecules/TheNavbar.vue';
+import TheNavbar from '~/components/nav/TheNavbar.vue';
 
 const routes = [
   {
-    name: "Covid",
-    path: "/covid19/"
+    name: "Homepage",
+    path: "/"
+  },
+  {
+    name: "Education",
+    path: "/education/"
   },
   {
     name: "About",
-    path: "/covid19/about"
+    path: "/about"
   }
 ]
 
@@ -37,9 +41,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "./assets/styles/devices.scss";
+
 header {
-  padding: 30px;
-  width: 100%;
+  padding: 80px 0 40px;
+  min-width: 70vw;
   top: 0;
 
   & .header-container {
@@ -52,8 +58,14 @@ header {
 
   & .logo {
     margin: 0;
-    max-height: 35px;
+    height: 75px;
     cursor: pointer;
+  }
+}
+
+@include phone {
+  .navbar {
+    display: none;
   }
 }
 </style>

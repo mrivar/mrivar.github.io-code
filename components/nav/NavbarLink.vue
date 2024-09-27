@@ -1,8 +1,8 @@
 <template>
-  <n-link
-    :to="path"
-    class="navbar-item"
-  >{{ name }}</n-link>
+  <n-link :to="path" class="navbar-item">
+      {{ name }}
+      <!--div class="red-circle"></div-->
+  </n-link>
 </template>
 
 <script>
@@ -23,19 +23,34 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "./assets/styles/colors.scss";
+@import "./assets/styles/fonts.scss";
+@import "./assets/styles/fonts-weight.scss";
+
+/*.navbar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}*/
 a {
-  color: black;
+  font-family: $barlow;
+  font-size: 25px;
+  font-weight: $bold;
+  color: $gray3;
   border-bottom: 0px solid;
-  margin-left: 10px;
+  margin-left: 27px;
 
   &:focus,
   &:hover,
   &.nuxt-link-exact-active {
-    font-weight: 500;
+    color: $dark-gray;
+    //font-weight: 500;
   }
 
   &.nuxt-link-exact-active {
+    color: $dark-gray;
     border-bottom-width: 2px;
+    border-color: $light-red;
   }
 }
 </style>

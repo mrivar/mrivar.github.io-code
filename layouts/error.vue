@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container">
+  <div class="main-container centered">
     <div>
       <img src="@/static/404.svg" />
       <h1 v-if="error.statusCode === 404" class="title">Page not found</h1>
@@ -16,6 +16,9 @@ export default {
 </script>
 
 <style scoped>
+.main-container {
+  max-width: none !important;
+}
 img {
   animation: 1s appear;
   margin: auto;

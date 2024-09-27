@@ -1,0 +1,12 @@
+.grid-columns-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "left right";
+}
+.grid-left {
+  grid-area: left;
+}
+.grid-right {
+  grid-area: right;
+}

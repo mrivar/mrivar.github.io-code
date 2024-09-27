@@ -26,6 +26,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+nav {
+  align-self: start;
+}
 </style>
