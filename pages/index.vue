@@ -48,6 +48,7 @@ export default {
 }
 .grid-right {
   justify-self: right;
+  padding-top: 100px;
   & h2 {
     text-align: left;
     max-width: 275px;
@@ -56,12 +57,14 @@ export default {
 
 @include phone {
   .grid-columns-container {
+    padding-top: 0;
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "left""right";
   }
   .grid-right {
-    justify-self: center;
+    padding-top: 20px;
+    justify-self: left;
   }
 }
 </style>
