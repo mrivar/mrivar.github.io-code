@@ -1,0 +1,5 @@
+# Utils folder, not code
+utils/
+
+# Not used assets
+assets/fonts/quicksand.scss

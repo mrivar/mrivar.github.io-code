@@ -10,3 +10,6 @@ run_prod:
 	@echo "Running application locally (prod)..."
 	npm run build
 	npm run start
+
+build:
+	npm run generate

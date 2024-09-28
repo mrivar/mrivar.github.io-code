@@ -1,3 +1,4 @@
+// boost performance: https://dev.to/hakimov_dev/top-10-nuxtjs-secrets-to-boost-your-apps-performance-564d
 export default {
   mode: 'universal',
   /*
@@ -40,8 +41,10 @@ export default {
   ],
   /*
    ** Nuxt.js dev-modules
+   * '@nuxt/image': Optimize Images: deliver images in the appropriate
+   * format, size, and quality based on the user's device.
    */
-  buildModules: [],
+  buildModules: [],//['@nuxt/image'],
   /*
    ** Nuxt.js modules
    */
@@ -50,6 +53,8 @@ export default {
    ** Build configuration
    */
   build: {
+    // Optmize CSS
+    extractCSS: true,
     transpile: [/^element-ui/],
     /*
      ** You can extend webpack config here
@@ -74,5 +79,9 @@ export default {
   },
   router: {
     base: '/'
-  }
+  },
+  // Enable Static Site Generation (SSG)
+  target: 'static'
+  // Enable Server-Side Rendering (SSR)
+  // target: 'server'
 }
