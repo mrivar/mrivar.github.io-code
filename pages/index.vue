@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "./assets/styles/devices.scss";
+@import "@/assets/styles/devices.scss";
 
 .grid-rows {
   display: grid;

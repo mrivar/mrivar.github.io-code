@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "./assets/styles/devices.scss";
+@import "@/assets/styles/devices.scss";
 
 header {
   padding: 80px 0 40px;

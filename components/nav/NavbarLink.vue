@@ -1,8 +1,8 @@
 <template>
-  <n-link :to="path" class="navbar-item">
+  <NuxtLink :to="path" class="navbar-item">
       {{ name }}
       <!--div class="red-circle"></div-->
-  </n-link>
+  </NuxtLink>
 </template>
 
 <script>
@@ -23,9 +23,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "./assets/styles/colors.scss";
-@import "./assets/styles/fonts.scss";
-@import "./assets/styles/fonts-weight.scss";
+@import "@/assets/styles/colors.scss";
+@import "@/assets/styles/fonts.scss";
+@import "@/assets/styles/fonts-weight.scss";
 
 /*.navbar-item {
   display: flex;
