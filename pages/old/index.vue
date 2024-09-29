@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./assets/styles/colors.scss";
+@import "@/assets/styles/colors.scss";
 
 html {
   background-color: $black !important;

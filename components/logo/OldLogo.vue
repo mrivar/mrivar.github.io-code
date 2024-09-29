@@ -1,5 +1,5 @@
 <template>
-  <img class="logo" src="@/static/mr_logo.svg" />
+  <img class="logo" src="@/public/mr_logo.svg" alt="logo" />
 </template>
 
 <script>

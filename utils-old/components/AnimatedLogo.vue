@@ -1,15 +1,15 @@
 <template>
   <div class="Logo" ref="logo" @mouseover="animating = true">
-    <img class="main" src="@/static/letters/m.svg" />
-    <img src="@/static/letters/a.svg" />
-    <img src="@/static/letters/r.svg" />
-    <img src="@/static/letters/t.svg" />
-    <img src="@/static/letters/í.svg" />
-    <img src="@/static/letters/n.svg" />
-    <img class="main" src="@/static/letters/r.svg" />
-    <img src="@/static/letters/i.svg" />
-    <img src="@/static/letters/v.svg" />
-    <img src="@/static/letters/a.svg" />
+    <img class="main" src="@/public/letters/m.svg" />
+    <img src="@/public/letters/a.svg" />
+    <img src="@/public/letters/r.svg" />
+    <img src="@/public/letters/t.svg" />
+    <img src="@/public/letters/í.svg" />
+    <img src="@/public/letters/n.svg" />
+    <img class="main" src="@/public/letters/r.svg" />
+    <img src="@/public/letters/i.svg" />
+    <img src="@/public/letters/v.svg" />
+    <img src="@/public/letters/a.svg" />
   </div>
 </template>
 
