@@ -9,13 +9,6 @@
 </template>
 
 <script>
-import OldLogo from '~/components/logo/OldLogo.vue';
-
-export default {
-  components: {
-    OldLogo
-  }
-}
 </script>
 
 <style lang="scss">
