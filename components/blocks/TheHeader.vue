@@ -1,7 +1,9 @@
 <template>
   <header>
     <div class="header-container">
-      <Logo />
+      <NuxtLink :to="'/'">
+        <Logo />
+      </NuxtLink>
       <slot></slot>
       <TheNavbar class="navbar" :routes="routes" />
     </div>
