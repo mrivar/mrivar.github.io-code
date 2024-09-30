@@ -1,43 +1,7 @@
-@import "./colors.scss";
+@import "colors";
 
-$themes: (
-  light: (
-    text: $dark-gray,
-    bg: $white,
-    logo: $black,
-  ),
-  dark: (
-    text: $snow,
-    bg: $dark-gray,
-    logo: $light-red,
-  ),
-);
+$light-text: $dark-gray;
+$light-bg: $snow;
 
-@mixin themify($themes) {
-  @each $name, $values in $themes {
-    .#{$name}-theme {
-      $theme-map: $values !global;
-      @content;
-    }
-  }
-}
-@function themed($key) {
-  @return map-get($theme-map, $key);
-}
-
-/*
-https://david-x.medium.com/light-mode-dark-mode-dynamic-theming-through-scss-mixin-c86e57a4de49
-@include themify($themes) {
-  p {
-    color: themed("text");
-    background-color: themed("bg");
-  }
-  button {
-    background-color: themed("brand");
-    color: themed("text");
-  }
-  a {
-    color: themed("brand");
-  }
-};
-*/
+$dark-text: $snow;
+$dark-bg: $dark-gray;

@@ -5,7 +5,9 @@
         <Logo />
       </NuxtLink>
       <slot></slot>
-      <TheNavbar class="navbar" :routes="routes" />
+      <TheNavbar class="navbar" :routes="routes">
+        <DarkMode />
+      </TheNavbar>
     </div>
   </header>
 </template>
@@ -21,11 +23,11 @@ const routes = [
   },
   {
     name: "Education",
-    path: "/education/"
+    path: "/"
   },
   {
     name: "About",
-    path: "/about"
+    path: "/"
   }
 ]
 
@@ -43,7 +45,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/styles/devices.scss";
+@import "@/assets/styles/devices";
 
 header {
   padding: 80px 0 40px;

@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="path" class="navbar-item">
+  <NuxtLink :to="path" class="navbar-item text-button">
       {{ name }}
       <!--div class="red-circle"></div-->
   </NuxtLink>
@@ -36,21 +36,15 @@ a {
   font-family: $barlow;
   font-size: 25px;
   font-weight: $bold;
-  color: $gray3;
   border-bottom: 0px solid;
   margin-left: 27px;
 
-  &:focus,
-  &:hover,
-  &.nuxt-link-exact-active {
-    color: $dark-gray;
-    //font-weight: 500;
-  }
-
-  &.nuxt-link-exact-active {
+  /*
+  &.router-link-active {
     color: $dark-gray;
     border-bottom-width: 2px;
     border-color: $light-red;
   }
+  */
 }
 </style>

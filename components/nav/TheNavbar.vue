@@ -6,6 +6,7 @@
       :name="route.name"
       :path="route.path"
     />
+    <slot></slot>
   </nav>
 </template>
 

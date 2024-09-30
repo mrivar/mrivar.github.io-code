@@ -19,4 +19,11 @@ $dark-red: #AE2535;
 $snow: #FFFBFE;
 $skull-white: #EBEBEC;
 
-$logo: $red
+$logo: $red;
+
+.color-snow {
+  color: $snow;
+}
+.color-dark-gray {
+  color: $dark-gray;
+}

@@ -1,8 +1,10 @@
-@import "./colors.scss";
-@import "./devices.scss";
-@import "./fonts.scss";
-@import "./fonts-weight.scss";
-@import "./grids.scss";
+@import "colors";
+@import "texts";
+@import "devices";
+@import "fonts";
+@import "fonts-weight";
+@import "grids";
+@import "themes";
 
 html {
   font-family: $barlow;
@@ -12,10 +14,14 @@ html {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-color: $snow;
+  background-color: $light-bg;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  &.dark-mode {
+    background-color: $dark-bg;
+  }
 }
 
 body {
@@ -50,20 +56,6 @@ input {
 }
 .centered {
   align-items: center;
-}
-.title {
-  display: block;
-  font-weight: $extra-bold;
-  font-size: 40px;
-  color: $dark-gray;
-  letter-spacing: 1px;
-}
-.text {
-  font-weight: $extra-light;
-  font-size: 20px;
-  color: $dark-gray;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .red-block {
