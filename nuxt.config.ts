@@ -31,14 +31,9 @@ export default defineNuxtConfig({
     }
   },
   /*
-   ** Customize the progress-bar color
-   */
-  // loading: { color: '#fff' },
-  /*
    ** Global CSS
    */
   css: [
-    //'element-ui/lib/theme-chalk/index.css',
     '@/assets/styles/main.scss',
   ],
   /*
@@ -53,6 +48,8 @@ export default defineNuxtConfig({
    * format, size, and quality based on the user's device.
    */
   modules: [
+    '@nuxtjs/color-mode',
+    '@nuxtjs/tailwindcss',
     '@pinia/nuxt'
   ],
   /*
@@ -67,11 +64,4 @@ export default defineNuxtConfig({
     // fix github 404.html
     // fallback: true
   },
-  router: {
-    // base: '/'
-  },
-  // Enable Static Site Generation (SSG)
-  // target: 'static'
-  // Enable Server-Side Rendering (SSR)
-  // target: 'server'
 })
