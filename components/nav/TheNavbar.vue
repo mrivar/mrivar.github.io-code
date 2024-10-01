@@ -38,4 +38,10 @@ nav {
     gap: 10px;
   }
 }
+@include small-phone {
+  nav {
+    flex-direction: column;
+    align-items: end;
+  }
+}
 </style>

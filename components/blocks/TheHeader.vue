@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="header-container">
-      <NuxtLink :to="'/'">
+      <NuxtLink :to="'/'" class="logo-container">
         <Logo />
       </NuxtLink>
       <slot></slot>
@@ -58,9 +58,13 @@ header {
     width: 100%;
   }
 
+  & .logo-container {
+    align-self: start;
+  }
+
   & .logo {
     margin: 0;
-    height: 75px;
+    height: 80px;
     cursor: pointer;
   }
 }
