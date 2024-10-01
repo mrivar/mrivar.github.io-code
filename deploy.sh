@@ -4,7 +4,12 @@
 set -e
 
 # build
-make build
+make build_github_pages
+
+# copy readme from main directory
+if [ -f "README.md" ]; then
+  cp README.md dist/README.md
+fi
 
 # navigate into the build output directory
 cd dist

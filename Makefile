@@ -12,8 +12,13 @@ run:
 
 run_prod:
 	@echo "Running application locally (prod)..."
-	npm run build
-	npm run start
+	pnpm run build
+	pnpm run start
 
 build:
-	pnpm run generate
+	@echo "Building application..."
+	pnpm run build
+
+build_github_pages:
+	@echo "Building application for Github Pages..."
+	npx nuxt build --preset github_pages
