@@ -9,18 +9,9 @@
 </template>
 
 <script>
-import OldLogo from '~/components/logo/OldLogo.vue';
-
-export default {
-  components: {
-    OldLogo
-  }
-}
 </script>
 
 <style lang="scss">
-@import "@/assets/styles/colors.scss";
-
 html {
   background-color: $black !important;
 }

@@ -1,9 +1,13 @@
 <template>
   <header>
     <div class="header-container">
-      <Logo />
+      <NuxtLink :to="'/'">
+        <Logo />
+      </NuxtLink>
       <slot></slot>
-      <TheNavbar class="navbar" :routes="routes" />
+      <TheNavbar class="navbar" :routes="routes">
+        <DarkMode />
+      </TheNavbar>
     </div>
   </header>
 </template>
@@ -19,11 +23,11 @@ const routes = [
   },
   {
     name: "Education",
-    path: "/education/"
+    path: "/"
   },
   {
     name: "About",
-    path: "/about"
+    path: "/"
   }
 ]
 
@@ -40,9 +44,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-@import "@/assets/styles/devices.scss";
-
+<style scoped>
 header {
   padding: 80px 0 40px;
   min-width: 70vw;
@@ -60,12 +62,6 @@ header {
     margin: 0;
     height: 75px;
     cursor: pointer;
-  }
-}
-
-@include phone {
-  .navbar {
-    display: none;
   }
 }
 </style>

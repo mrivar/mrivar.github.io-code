@@ -1,0 +1,33 @@
+@import "colors";
+@import "fonts-weight";
+@import "themes";
+
+$text-xxl: 40px;
+$text-xl: 25px;
+$text-l: 20px;
+$text-m: 18px;
+
+.title {
+  display: block;
+  font-weight: $extra-bold;
+  font-size: $text-xxl;
+  color: $light-text;
+  letter-spacing: 1px;
+
+  html.dark-mode & {
+    color: $dark-text;
+  }
+}
+.subtitle {
+  font-weight: $extra-light;
+  font-size: $text-l;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.text {
+  color: $light-text;
+
+  html.dark-mode & {
+    color: $dark-text;
+  }
+}

@@ -23,6 +23,8 @@ export default {
   max-width: 90%;
   //fill: $light-red;
   filter: invert(60%) sepia(47%) saturate(3808%) hue-rotate(324deg) brightness(106%) contrast(91%);
+  //fill: $dark-red;
+  //filter: invert(21%) sepia(32%) saturate(5869%) hue-rotate(337deg) brightness(83%) contrast(91%);
 }
 
 @keyframes appear {

@@ -4,11 +4,11 @@
       <TheHeader />
       <div class="grid-columns-container">
         <div class="grid-left">
-          <h1 class="title loading">Hi, I'm Martín<br> and I'm a<br> developer</h1>
+          <h1 class="title">Hi, I'm Martín<br> and I'm a<br> developer</h1>
           <div class="red-block"></div>
         </div>
         <div class="grid-right">
-          <h2 class="text">
+          <h2 class="subtitle text">
             I am a Full Stack Developer with 8+ years of experience.<br>
             I enjoy building both the front end and back end of applications.
           </h2>
@@ -19,18 +19,9 @@
 </template>
 
 <script>
-import TheHeader from '~/components/blocks/TheHeader.vue';
-
-export default {
-  components: {
-    TheHeader
-  }
-}
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/styles/devices.scss";
-
 .grid-rows {
   display: grid;
   grid-template-rows: auto 1fr;

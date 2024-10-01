@@ -31,47 +31,51 @@ export default defineNuxtConfig({
     }
   },
   /*
-   ** Customize the progress-bar color
-   */
-  // loading: { color: '#fff' },
-  /*
    ** Global CSS
    */
   css: [
-    //'element-ui/lib/theme-chalk/index.css',
     '@/assets/styles/main.scss',
   ],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/styles/constants.scss" as *;'
+        }
+      }
+    }
+  },
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    //'@/plugins/element-ui',
-  ],
+  plugins: [],
   /*
    ** Nuxt.js modules
    * '@nuxt/image': Optimize Images: deliver images in the appropriate
    * format, size, and quality based on the user's device.
    */
   modules: [
-    '@pinia/nuxt'
+    '@nuxtjs/color-mode',
+    '@pinia/nuxt',
+    '@nuxt/icon',
   ],
+  colorMode: {
+    preference: 'system', // default value of $colorMode.preference
+    fallback: 'dark', // fallback value if not system preference found
+    classPrefix: '',
+    classSuffix: '-mode',
+    storage: 'localStorage', // or 'sessionStorage' or 'cookie'
+    storageKey: 'nuxt-color-mode'
+  },
   /*
    ** Build configuration
    */
   build: {
     // Optmize CSS
     // extractCSS: true,
-    transpile: [/^element-ui/]
   },
   generate: {
     // fix github 404.html
     // fallback: true
   },
-  router: {
-    // base: '/'
-  },
-  // Enable Static Site Generation (SSG)
-  // target: 'static'
-  // Enable Server-Side Rendering (SSR)
-  // target: 'server'
 })
