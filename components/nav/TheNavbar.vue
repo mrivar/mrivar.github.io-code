@@ -27,8 +27,15 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 nav {
+  display: flex;
   align-self: start;
+  gap: 27px;
+}
+@include phone {
+  nav {
+    gap: 10px;
+  }
 }
 </style>

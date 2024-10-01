@@ -36,12 +36,19 @@ export default defineNuxtConfig({
   css: [
     '@/assets/styles/main.scss',
   ],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/styles/constants.scss" as *;'
+        }
+      }
+    }
+  },
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    //'@/plugins/element-ui',
-  ],
+  plugins: [],
   /*
    ** Nuxt.js modules
    * '@nuxt/image': Optimize Images: deliver images in the appropriate

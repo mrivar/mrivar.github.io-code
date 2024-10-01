@@ -12,8 +12,6 @@
 </script>
 
 <style lang="scss">
-@import "colors";
-
 html {
   background-color: $black !important;
 }

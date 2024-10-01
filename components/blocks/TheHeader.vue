@@ -44,9 +44,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-@import "@/assets/styles/devices";
-
+<style scoped>
 header {
   padding: 80px 0 40px;
   min-width: 70vw;
@@ -64,12 +62,6 @@ header {
     margin: 0;
     height: 75px;
     cursor: pointer;
-  }
-}
-
-@include phone {
-  .navbar {
-    display: none;
   }
 }
 </style>

@@ -23,10 +23,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/styles/colors.scss";
-@import "@/assets/styles/fonts.scss";
-@import "@/assets/styles/fonts-weight.scss";
-
 /*.navbar-item {
   display: flex;
   flex-direction: column;
@@ -34,10 +30,9 @@ export default {
 }*/
 a {
   font-family: $barlow;
-  font-size: 25px;
+  font-size: $text-xl;
   font-weight: $bold;
   border-bottom: 0px solid;
-  margin-left: 27px;
 
   /*
   &.router-link-active {
@@ -46,5 +41,11 @@ a {
     border-color: $light-red;
   }
   */
+}
+@include phone {
+  a {
+    font-size: $text-m;
+    font-weight: $semi-bold;
+  }
 }
 </style>

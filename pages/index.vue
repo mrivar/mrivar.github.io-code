@@ -22,8 +22,6 @@
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/styles/devices.scss";
-
 .grid-rows {
   display: grid;
   grid-template-rows: auto 1fr;
