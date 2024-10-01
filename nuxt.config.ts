@@ -67,6 +67,21 @@ export default defineNuxtConfig({
     storage: 'localStorage', // or 'sessionStorage' or 'cookie'
     storageKey: 'nuxt-color-mode'
   },
+  icon: {
+    clientBundle: {
+      // list of icons to include in the client bundle
+      icons: [
+        'heroicons-outline:moon',
+        'heroicons-outline:sun'
+      ],
+      // scan all components in the project and include icons
+      scan: true,
+      // include all custom collections in the client bundle
+      includeCustomCollections: true,
+      // guard for uncompressed bundle size, will fail the build if exceeds
+      sizeLimitKb: 256,
+    },
+  },
   /*
    ** Build configuration
    */
