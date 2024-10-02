@@ -2,15 +2,21 @@
 @import "fonts-weight";
 @import "themes";
 
+$text-xxxl: 66px;
 $text-xxl: 40px;
 $text-xl: 25px;
 $text-l: 20px;
 $text-m: 18px;
 
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .title {
   display: block;
   font-weight: $extra-bold;
-  font-size: $text-xxl;
+  font-size: $text-xxxl;
   color: $light-text;
   letter-spacing: 1px;
 

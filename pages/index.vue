@@ -1,19 +1,14 @@
 <template>
-  <div class="main-container">
-    <div class="grid-rows">
-      <TheHeader />
-      <div class="grid-columns-container">
-        <div class="grid-left">
-          <h1 class="title">Hi, I'm Martín<br> and I'm a<br> developer</h1>
-          <div class="red-block"></div>
-        </div>
-        <div class="grid-right">
-          <h2 class="subtitle text">
-            I am a Full Stack Developer with 8+ years of experience.<br>
-            I enjoy building both the front end and back end of applications.
-          </h2>
-        </div>
-      </div>
+  <div class="grid-columns-container">
+    <div class="grid-left">
+      <h1 class="title">Hi, I'm Martín<br> and I'm a<br> developer</h1>
+      <div class="red-block"></div>
+    </div>
+    <div class="grid-right">
+      <h2 class="subtitle text">
+        I am a Full Stack Developer with 8+ years of experience.<br>
+        I enjoy building both the front end and back end of applications.
+      </h2>
     </div>
   </div>
 </template>
@@ -32,7 +27,7 @@
 }
 .grid-left {
   & .title {
-    font-size: 66px;
+    font-size: $text-xxxl;
     text-align: left;
     margin-bottom: 30px;
   }
