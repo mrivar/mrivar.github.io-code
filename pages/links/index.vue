@@ -19,7 +19,7 @@
         <Icon name="tabler:world"></Icon> Website (you're already on it!)
       </NuxtLink>
       <div class="last-links-container">
-        <NuxtLink to="https://open.spotify.com/user/bedjnwu0qyjkktda8zx2wvxmn" class="text">
+        <NuxtLink to="https://open.spotify.com/user/bedjnwu0qyjkktda8zx2wvxmn" class="text" target="_blank">
           <Icon name="streamline:spotify"></Icon>
         </NuxtLink>
       </div>

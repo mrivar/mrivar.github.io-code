@@ -25,6 +25,11 @@ export default {
   filter: invert(60%) sepia(47%) saturate(3808%) hue-rotate(324deg) brightness(106%) contrast(91%);
   //fill: $dark-red;
   //filter: invert(21%) sepia(32%) saturate(5869%) hue-rotate(337deg) brightness(83%) contrast(91%);
+  transition: transform 0.4s ease-in-out;
+
+  &:hover {
+    transform: rotate(180deg);
+  }
 }
 
 @keyframes appear {
