@@ -15,7 +15,7 @@
       <NuxtLink to="https://www.linkedin.com/in/martin-de-la-riva/" class="link-container text" target="_blank">
         <Icon name="devicon-plain:linkedin"></Icon> LinkedIn
       </NuxtLink>
-      <NuxtLink to="https://mrivar.github.io" class="link-container text" target="_blank">
+      <NuxtLink to="https://mrivar.github.io" class="link-container text">
         <Icon name="tabler:world"></Icon> Website (you're already on it!)
       </NuxtLink>
       <div class="last-links-container">

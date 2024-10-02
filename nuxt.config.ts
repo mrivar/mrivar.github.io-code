@@ -72,7 +72,11 @@ export default defineNuxtConfig({
       // list of icons to include in the client bundle
       icons: [
         'heroicons-outline:moon',
-        'heroicons-outline:sun'
+        'heroicons-outline:sun',
+        'grommet-icons:github',
+        'devicon-plain:linkedin',
+        'tabler:world',
+        'streamline:spotify'
       ],
       // scan all components in the project and include icons
       scan: true,
