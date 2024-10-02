@@ -18,7 +18,7 @@ import TheNavbar from '~/components/nav/TheNavbar.vue';
 
 const routes = [
   {
-    name: "Blog",
+    name: "About",
     path: "/"
   },
   {
@@ -26,7 +26,7 @@ const routes = [
     path: "/links/"
   },
   {
-    name: "About",
+    name: "Blog",
     path: "/"
   }
 ]
@@ -44,7 +44,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 header {
   padding: 80px 0 40px;
   min-width: 70vw;
@@ -66,6 +66,17 @@ header {
     margin: 0;
     height: 80px;
     cursor: pointer;
+  }
+}
+
+@include phone {
+  header {
+    padding-top: 60px;
+  }
+}
+@include small-phone {
+  header {
+    padding-top: 50px;
   }
 }
 </style>

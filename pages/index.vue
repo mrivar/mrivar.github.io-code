@@ -17,10 +17,6 @@
 </script>
 
 <style scoped lang="scss">
-.grid-rows {
-  display: grid;
-  grid-template-rows: auto 1fr;
-}
 .grid-columns-container {
   column-gap: 30px;
   padding-top: 100px;
