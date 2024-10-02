@@ -1,6 +1,9 @@
 <template>
-  <div>
-    <slot />
+  <div class="main-container">
+    <div class="grid-rows">
+      <TheHeader />
+      <slot />
+    </div>
   </div>
 </template>
 

@@ -11,8 +11,6 @@
 </template>
 
 <script>
-import NavbarLink from '~/components/nav/NavbarLink.vue';
-
 export default {
   name: "TheNavbar",
   props: {
@@ -20,9 +18,6 @@ export default {
      * Array of routes with name and route
      */
     routes: Array
-  },
-  components: {
-    NavbarLink
   }
 }
 </script>

@@ -18,12 +18,12 @@ import TheNavbar from '~/components/nav/TheNavbar.vue';
 
 const routes = [
   {
-    name: "Homepage",
+    name: "Blog",
     path: "/"
   },
   {
-    name: "Education",
-    path: "/"
+    name: "Links",
+    path: "/links/"
   },
   {
     name: "About",
