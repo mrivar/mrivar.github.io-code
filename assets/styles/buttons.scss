@@ -28,3 +28,40 @@ input:where([type='submit']) {
     }
   }
 }
+
+.big-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 300px;
+  border-radius: 10px;
+  margin: 15px 0;
+  padding: 20px 0;
+  font-size: $text-m;
+  color: $snow !important;
+  background-color: $dark-gray;
+  /* offset-x | offset-y | blur-radius | color */
+  box-shadow: 6px 6px 0 $gray2;
+  transition: all  0.1s ease-in-out;
+
+  &:hover {
+    box-shadow: 3px 4px 0 $dark-gray;
+    transform: translate(3px, 1px);
+  }
+
+  html.dark-mode & {
+    background-color: $skull-white;
+    box-shadow: 7px 6px 0 $light-gray;
+    color: $dark-gray !important;
+
+    &:hover {
+      box-shadow: 3px 4px 0 $light-gray;
+    }
+  }
+
+  // icons in button
+  & span {
+    font-size: $text-xl;
+  }
+}

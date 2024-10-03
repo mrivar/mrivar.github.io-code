@@ -1,18 +1,31 @@
 <template>
-  <NuxtLink v-for="link in links" :to="link.route" class="link-container text">
-    {{ link.content }}
-  </NuxtLink>
+  <div class="link-container">
+    <NuxtLink v-for="link in links" :to="link.path" class="big-button text" :target="_blank ? '_blank' : null">
+      <Icon :name="link.icon"></Icon> {{ link.name }}
+    </NuxtLink>
+  </div>
 </template>
 
 <script setup lang="ts">
-export default {
-  props: {
-    /**
-     * Array of links with route and content
-     */
-    links: Array
-  }
+const { links } = defineProps({
+  /**
+   * Array of links with route and content
+   */
+  links: Array as PropType<Array<Link>>
+});
+
+class Link {
+  name: String
+  icon: String
+  path: String
+  _blank: Boolean = true
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
