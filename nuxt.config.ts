@@ -18,7 +18,7 @@ export default defineNuxtConfig({
      * https://nuxt.com/docs/getting-started/seo-meta
      */
     head: {
-      title: 'Title from config',
+      //title: 'Title from config',
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       link: [
@@ -76,7 +76,8 @@ export default defineNuxtConfig({
         'grommet-icons:github',
         'devicon-plain:linkedin',
         'tabler:world',
-        'streamline:spotify'
+        'streamline:spotify',
+        'simple-icons:strava'
       ],
       // scan all components in the project and include icons
       scan: true,

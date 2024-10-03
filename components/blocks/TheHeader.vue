@@ -13,9 +13,6 @@
 </template>
 
 <script>
-import Logo from '~/components/logo/Logo.vue';
-import TheNavbar from '~/components/nav/TheNavbar.vue';
-
 const routes = [
   {
     name: "About",
@@ -32,10 +29,6 @@ const routes = [
 ]
 
 export default {
-  components: {
-    Logo,
-    TheNavbar
-  },
   data() {
     return {
       routes
@@ -60,6 +53,8 @@ header {
 
   & .logo-container {
     align-self: start;
+    -webkit-tap-highlight-color: transparent !important;
+    outline: none !important;
   }
 
   & .logo {

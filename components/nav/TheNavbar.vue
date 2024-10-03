@@ -10,16 +10,13 @@
   </nav>
 </template>
 
-<script>
-export default {
-  name: "TheNavbar",
-  props: {
-    /**
-     * Array of routes with name and route
-     */
-    routes: Array
-  }
-}
+<script setup lang="ts">
+const { routes } = defineProps({
+  /**
+   * Array of routes with name and route
+   */
+  routes: Array
+});
 </script>
 
 <style scoped lang="scss">
