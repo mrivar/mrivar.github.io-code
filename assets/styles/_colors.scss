@@ -5,6 +5,7 @@ $purple: #383762;
 $red: #AE2435;
 $white: #FFF;
 $yellow: #FFCC00;
+$mustard: #FFAF2A;
 $light-gray: #CCC;
 $light-red: #F36161;
 $light-purple: #677BC4;
@@ -19,11 +20,18 @@ $dark-red: #AE2535;
 $snow: #FFFBFE;
 $skull-white: #EBEBEC;
 
-$logo: $red;
-
 .color-snow {
   color: $snow;
 }
 .color-dark-gray {
   color: $dark-gray;
 }
+
+$logo: $red;
+
+// THEMES
+$light-text: $dark-gray;
+$light-bg: $snow;
+
+$dark-text: $snow;
+$dark-bg: $dark-gray;

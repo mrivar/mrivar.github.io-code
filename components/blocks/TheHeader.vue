@@ -53,8 +53,6 @@ header {
 
   & .logo-container {
     align-self: start;
-    -webkit-tap-highlight-color: transparent !important;
-    outline: none !important;
   }
 
   & .logo {
@@ -72,6 +70,7 @@ header {
 @include small-phone {
   header {
     padding-top: 50px;
+    padding-bottom: 20px;
   }
 }
 </style>

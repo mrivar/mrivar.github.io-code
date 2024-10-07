@@ -29,34 +29,45 @@ input:where([type='submit']) {
   }
 }
 
+$button-blur-radius: 0;
+
 .big-button {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
   width: 300px;
-  border-radius: 10px;
+  border-radius: 40px;
   margin: 15px 0;
   padding: 20px 0;
   font-size: $text-m;
-  color: $snow !important;
-  background-color: $dark-gray;
+  //color: $snow !important;
+  background-color: $skull-white;
   /* offset-x | offset-y | blur-radius | color */
-  box-shadow: 6px 6px 0 $gray2;
+  box-shadow: 5.5px 6px $button-blur-radius $light-gray;
   transition: all  0.1s ease-in-out;
 
   &:hover {
-    box-shadow: 3px 4px 0 $dark-gray;
-    transform: translate(3px, 1px);
+    box-shadow: 4.25px 4.25px $button-blur-radius $light-gray;
+    transform: translate(1.75px, 1.75px);
+  }
+
+  &:focus {
+    box-shadow: 2px 2px $button-blur-radius $light-gray;
+    transform: translate(4px, 4px);
   }
 
   html.dark-mode & {
     background-color: $skull-white;
-    box-shadow: 7px 6px 0 $light-gray;
+    box-shadow: 5.5px 6px $button-blur-radius $light-gray;
     color: $dark-gray !important;
 
     &:hover {
-      box-shadow: 3px 4px 0 $light-gray;
+      box-shadow: 4.25px 4.25px $button-blur-radius $light-gray;
+    }
+
+    &:focus {
+      box-shadow: 2px 2px $button-blur-radius $light-gray;
     }
   }
 

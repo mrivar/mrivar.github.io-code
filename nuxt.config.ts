@@ -75,9 +75,8 @@ export default defineNuxtConfig({
         'heroicons-outline:sun',
         'grommet-icons:github',
         'devicon-plain:linkedin',
-        'tabler:world',
-        'streamline:spotify',
-        'simple-icons:strava'
+        'simple-icons:strava',
+        'simple-icons:letterboxd',
       ],
       // scan all components in the project and include icons
       scan: true,

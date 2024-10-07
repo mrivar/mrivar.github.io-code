@@ -4,7 +4,7 @@
       <img src="public/404.svg" alt="404"/>
       <h1 v-if="error.statusCode === 404" class="title">Page not found</h1>
       <h1 v-else class="title">An error occurred</h1>
-      <nuxt-link to="/" class="subtitle">Home page</nuxt-link>
+      <NuxtLink to="/" class="subtitle">Home page</NuxtLink>
     </div>
   </div>
 </template>
