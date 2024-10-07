@@ -15,17 +15,17 @@
 <script>
 const routes = [
   {
-    name: "About",
-    path: "/"
-  },
-  {
     name: "Links",
     path: "/links/"
   },
   {
     name: "Blog",
     path: "/"
-  }
+  },
+  {
+    name: "CV",
+    path: "/cv/"
+  },
 ]
 
 export default {

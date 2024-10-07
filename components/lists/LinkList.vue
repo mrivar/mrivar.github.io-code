@@ -1,6 +1,6 @@
 <template>
   <div class="link-container">
-    <NuxtLink v-for="link in links" :to="link.path" class="big-button text" :target="_blank ? '_blank' : null">
+    <NuxtLink v-for="link in links" :to="link.path" class="big-button text" :target="link.target">
       <Icon :name="link.icon"></Icon> {{ link.name }}
     </NuxtLink>
   </div>
@@ -18,7 +18,7 @@ class Link {
   name: String
   icon: String
   path: String
-  _blank: Boolean = true
+  target: String = null
 }
 </script>
 
