@@ -6,6 +6,7 @@
     </div>
     <div class="grid-right">
       <h2 class="subtitle text">
+        Welcome to my site!<br>
         I am a Full Stack Developer with 8+ years of experience.<br>
         I enjoy building both the front end and back end of applications.
       </h2>
@@ -30,7 +31,7 @@
 }
 .grid-right {
   justify-self: right;
-  padding-top: 100px;
+  padding-top: 60px;
   & h2 {
     text-align: left;
     max-width: 275px;

@@ -1,17 +1,26 @@
 <template>
   <footer>
-    <NuxtLink to="https://github.com/mrivar" class="text" target="_blank">
-      <Icon name="grommet-icons:github"></Icon>
-    </NuxtLink>
-    <NuxtLink to="https://www.linkedin.com/in/martin-de-la-riva/" class="text" target="_blank">
-      <Icon name="devicon-plain:linkedin"></Icon>
-    </NuxtLink>
-    <NuxtLink to="https://mrivar.github.io" class="text">
-      <Icon name="tabler:world"></Icon>
-    </NuxtLink>
-    <NuxtLink to="https://open.spotify.com/user/bedjnwu0qyjkktda8zx2wvxmn" class="text" target="_blank">
-      <Icon name="streamline:spotify"></Icon>
-    </NuxtLink>
+    <div class="footer-left text">
+      <NuxtLink to="/" class="text">
+        <span class="bold">martín</span>
+        <span class="light">riva</span>
+      </NuxtLink>
+    </div>
+    <div class="footer-center">
+      <NuxtLink to="https://github.com/mrivar" class="text" target="_blank">
+        <Icon name="grommet-icons:github"></Icon>
+      </NuxtLink>
+      <NuxtLink to="https://www.linkedin.com/in/martin-de-la-riva/" class="text" target="_blank">
+        <Icon name="devicon-plain:linkedin"></Icon>
+      </NuxtLink>
+      <NuxtLink to="https://www.strava.com/athletes/martin_riva" class="text" target="_blank">
+        <Icon name="simple-icons:strava"></Icon>
+      </NuxtLink>
+      <NuxtLink to="https://letterboxd.com/martin__rv/" class="text" target="_blank">
+        <Icon name="simple-icons:letterboxd"></Icon>
+      </NuxtLink>
+    </div>
+    <div></div>
   </footer>
 </template>
 
@@ -23,13 +32,23 @@ export default {
 
 <style scoped lang="scss">
 footer {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 30px 0;
 
-  & a {
+  .footer-left {
+    display: flex;
+    align-self: start;
     font-size: $text-l;
+  }
+  .footer-center {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    & a {
+      font-size: $text-l;
+    }
   }
 }
 
