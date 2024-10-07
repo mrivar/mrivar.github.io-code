@@ -21,10 +21,13 @@ export default {
   margin: auto;
   height: 75px;
   max-width: 90%;
+  // https://isotropic.co/tool/hex-color-to-css-filter/
   //fill: $light-red;
   filter: invert(60%) sepia(47%) saturate(3808%) hue-rotate(324deg) brightness(106%) contrast(91%);
   //fill: $dark-red;
   //filter: invert(21%) sepia(32%) saturate(5869%) hue-rotate(337deg) brightness(83%) contrast(91%);
+  //fill: $mustard
+  //filter: invert(80%) sepia(31%) saturate(3862%) hue-rotate(337deg) brightness(106%) contrast(101%);
   transition: transform 0.4s ease-in-out;
 
   &:hover {

@@ -38,7 +38,7 @@ a {
   &.router-link-active {
     color: $dark-gray;
     border-bottom-width: 2px;
-    border-color: $light-red;
+    border-color: $primary-color;
   }
   */
 }

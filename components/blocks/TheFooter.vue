@@ -25,9 +25,6 @@
 </template>
 
 <script>
-export default {
-
-}
 </script>
 
 <style scoped lang="scss">
@@ -40,13 +37,21 @@ footer {
     display: flex;
     align-self: start;
     font-size: $text-l;
+
+    @include phone {
+      & a {
+        display: none;
+      }
+    }
   }
   .footer-center {
     display: flex;
     justify-content: center;
+    align-items: end;
     gap: 20px;
 
     & a {
+      display: flex;
       font-size: $text-l;
     }
   }
