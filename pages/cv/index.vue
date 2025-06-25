@@ -7,6 +7,7 @@ const experience = [
     institution: "Devo",
     institutionWeb: "https://www.devo.com/",
     description: "Currently working in Devo using Kotlin",
+    tags: ["kotlin"],
   },
   {
     years: "2019 — 2022",
@@ -17,6 +18,7 @@ const experience = [
     description: "Worked in TAIGER’s main poduct, IDP.\n" +
       "• Angular, Jasmine, GraphQL\n" +
       "• Python, MySQL, Docker, Kubernetes, RabbitMQ, Microservices",
+    tags: ["python", "angular"],
   },
   {
     years: "03 — 08/2019",
@@ -25,6 +27,7 @@ const experience = [
     institution: "LINKS",
     institutionWeb: "https://linksfoundation.com/en/",
     description: "Research Institute. Worked on research projects on Computer Vision and Natural Language Processing, using Deep Learning techniques.",
+    tags: ["python", "react"],
   },
   {
     years: "2016 — 2018",
@@ -33,6 +36,7 @@ const experience = [
     institution: "United Academics",
     institutionWeb: "https://www.ua-foundation.org/",
     description: "Development using React, Django and MongoDB.",
+    tags: ["python", "django", "react"],
   },
   {
     years: "01 — 08/2016",
@@ -41,6 +45,7 @@ const experience = [
     institution: "Sugerendo",
     institutionWeb: "https://www.sugerendo.com/",
     description: "E-commerce consultancy specialized in Magento.",
+    tags: ["html", "css", "javascript"],
   },
 ]
 
@@ -66,6 +71,20 @@ const education = [
 
 <template>
   <div class="cv-container">
+    <div class="me">
+      <img src="@/public/me.jpg"  alt="me"/>
+      <div class="name-container">
+        <p class="name">
+          <span class="semi-bold">Martín de la Riva</span>
+        </p>
+        <p class="sub">
+          Full Stack Developer
+        </p>
+        <p class="city">
+          Barcelona, Spain
+        </p>
+      </div>
+    </div>
     <CvBlock title="about me">
       I’m a Developer with a Master’s in Artificial Intelligence. With around 8 years of experience
       in both frontend and backend, I love developing apps and learning new technologies.<br><br>
@@ -82,5 +101,19 @@ const education = [
 .cv-container {
   justify-self: center;
   max-width: 500px;
+}
+.me {
+  margin-bottom: 40px;
+  display: flex;
+  img {
+    width: 120px;
+    border-radius: 50%;
+  }
+  & .name-container {
+    text-align: left;
+    & p.name {
+      font-size: $text-xl;
+    }
+  }
 }
 </style>

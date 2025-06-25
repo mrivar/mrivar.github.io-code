@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    <span class="title text"><slot /></span>
+    <span class="title text gray"><slot /></span>
   </div>
 </template>
 

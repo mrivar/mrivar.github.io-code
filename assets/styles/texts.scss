@@ -31,6 +31,9 @@ $text-m: 18px;
 }
 .text {
   color: $light-text;
+  &.gray {
+    color: $latex-gray;
+  }
 
   html.dark-mode & {
     color: $dark-text;

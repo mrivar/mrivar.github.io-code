@@ -7,10 +7,11 @@
     <div v-for="item in items" :key="item.id" class="cv-block-item text">
       <div class="years">
         {{ item.years }}<br>
-        <span v-if="item.yearSum">( {{ item.yearSum }} )</span>
+        <span class="sum" v-if="item.yearSum">( {{ item.yearSum }} )</span>
       </div>
       <div class="job">
         <NuxtLink :to="item.institutionWeb" class="job-title">{{ item.position }} at {{ item.institution }}</NuxtLink>
+        <div class="tags"><span v-for="tag in item.tags" class="tag">{{ tag }}</span></div>
         <p>{{ item.description }}</p>
       </div>
     </div>
@@ -42,16 +43,16 @@ class Item {
 .cv-block {
   display: grid;
   justify-content: stretch;
-  max-width: 500px;
-  margin: auto auto 16px;
+  max-width: 600px;
+  margin: auto auto 20px;
 
   & .cv-block-title {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 
   & p.cv-block-description {
     text-align: left;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 
   & .cv-block-item {
@@ -62,7 +63,10 @@ class Item {
     margin-bottom: 48px;
 
     & .years {
-      color: $gray3;
+      color: $gray2;
+      & .sum {
+        color: $gray3;
+      }
     }
     & .job {
       display: grid;
@@ -81,6 +85,17 @@ class Item {
         color: $gray3;
       }
     }
+  }
+}
+.tags {
+  margin: 3px 0;
+  & .tag {
+    color: $primary-color;
+    background: $skull-white;
+    font-weight: $medium;
+    border-radius: 4px;
+    padding: 2px 4px;
+    margin-right: 10px;
   }
 }
 </style>

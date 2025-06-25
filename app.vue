@@ -1,7 +1,7 @@
 <template>
   <div>
     <Head>
-      <Title>Martín Riva's site</Title>
+      <Title>Martín Riva | Full Stack Developer</Title>
       <Meta name="description" content="This is my website! Welcome!"/>
     </Head>
     <NuxtLayout>
