@@ -13,6 +13,6 @@ div {
   text-align: left;
 }
 span.title {
-  font-size: $text-xl;
+  font-size: $text-xxl;
 }
 </style>

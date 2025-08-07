@@ -4,16 +4,19 @@
     <p class="cv-block-description text" v-if="$slots.default" >
       <slot />
     </p>
-    <div v-for="item in items" :key="item.id" class="cv-block-item text">
-      <div class="years">
+    <NuxtLink v-for="item in items" :key="item.id" class="cv-block-item text" :to="item.institutionWeb">
+      <div class="years years-desktop">
         {{ item.years }}<br>
         <span v-if="item.yearSum">( {{ item.yearSum }} )</span>
       </div>
       <div class="job">
-        <NuxtLink :to="item.institutionWeb" class="job-title">{{ item.position }} at {{ item.institution }}</NuxtLink>
-        <p>{{ item.description }}</p>
+        <p class="job-title">{{ item.position }} @ <span class="institution">{{ item.institution }}</span></p>
+        <div class="years years-phone">
+          {{ item.years }}
+        </div>
+        <p v-html="item.description"></p>
       </div>
-    </div>
+    </NuxtLink>
   </div>
 </template>
 
@@ -42,8 +45,7 @@ class Item {
 .cv-block {
   display: grid;
   justify-content: stretch;
-  max-width: 500px;
-  margin: auto auto 16px;
+  margin: auto auto 32px;
 
   & .cv-block-title {
     margin-bottom: 16px;
@@ -56,29 +58,57 @@ class Item {
 
   & .cv-block-item {
     display: grid;
-    grid-template-columns: 100px auto;
+    grid-template-columns: 103px auto;
     column-gap: 30px;
     text-align: left;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
+
+    padding: 20px;
+    background-color: $gray-bg;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 10px 10px -5px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 
     & .years {
       color: $gray3;
+      html.dark-mode & {
+        color: $white-half;
+      }
+    }
+    & .years-phone {
+      display: none;
     }
     & .job {
       display: grid;
-      & a.job-title {
+      & .job-title {
         font-weight: $medium;
         margin-bottom: 4px;
         color: $dark-gray;
       }
-      html.dark-mode & a.job-title {
+      html.dark-mode & .job-title {
         color: $snow;
       }
       & p {
         color: $gray2;
       }
       html.dark-mode & p {
-        color: $gray3;
+        color: $white-half;
+      }
+    }
+  }
+}
+
+@include phone {
+  .cv-block {
+    & .cv-block-item {
+      grid-template-columns: auto auto;
+      & .years-desktop {
+        display: none;
+      }
+      & .years-phone {
+        display: block;
+        margin-bottom: 16px;
+        font-size: $text-s;
       }
     }
   }
