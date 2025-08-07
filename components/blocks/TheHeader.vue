@@ -20,7 +20,7 @@ const routes = [
   },
   {
     name: "Blog",
-    path: "/"
+    path: "/blog/"
   },
   {
     name: "CV",
