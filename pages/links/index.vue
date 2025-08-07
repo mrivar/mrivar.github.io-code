@@ -1,3 +1,10 @@
+<template>
+  <div>
+    <TheTitle>Links</TheTitle>
+    <LinkList :links="links" />
+  </div>
+</template>
+
 <script setup lang="ts">
 const links = [
   {
@@ -44,13 +51,6 @@ const links = [
   }*/
 ]
 </script>
-
-<template>
-  <div>
-    <TheTitle>Links</TheTitle>
-    <LinkList :links="links" />
-  </div>
-</template>
 
 <style scoped lang="scss">
 </style>

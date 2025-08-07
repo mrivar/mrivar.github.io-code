@@ -6,6 +6,7 @@ $text-xxl: 40px;
 $text-xl: 25px;
 $text-l: 20px;
 $text-m: 18px;
+$text-s: 15px;
 
 .title-container {
   display: flex;
@@ -35,4 +36,7 @@ $text-m: 18px;
   html.dark-mode & {
     color: $dark-text;
   }
+}
+.b {
+  color: $primary-color
 }
