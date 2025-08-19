@@ -38,11 +38,17 @@ const links = [
     path: "https://letterboxd.com/martin__rv/",
     target: "_blank"
   },
+  {
+    name: "Goodreads",
+    icon: "simple-icons:goodreads",
+    path: "https://www.goodreads.com/martin-riva",
+    target: "_blank"
+  },
   /*{
     name: "Website (you're already on it!)",
     icon: "tabler:world",
-    path: "/",,
-    target: "_blank'
+    path: "/",
+    target: "_blank"
   },*/
   /*{
     name: "Spotify",
