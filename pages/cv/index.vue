@@ -1,5 +1,19 @@
 <template>
   <div class="cv-container">
+    <div class="me">
+      <img src="@/public/me.jpg"  alt="me"/>
+      <div class="name-container">
+        <p class="name">
+          <span class="semi-bold">Martín de la Riva</span>
+        </p>
+        <p class="sub">
+          Full Stack Developer
+        </p>
+        <p class="city">
+          Barcelona, Spain
+        </p>
+      </div>
+    </div>
     <CvBlock title="about me">
       I’m a Developer with a Master’s in Artificial Intelligence, with 9+ years of experience in building
       scalable backend systems and ML solutions. Passionate about clean code, distributed
@@ -23,6 +37,7 @@ const experience = [
     institutionWeb: "https://www.devo.com/",
     description: "Currently developing Devo’s big data product (a massive distributed DB), " +
       "using <b>Kotlin</b>, RabbitMQ, Akka, Pekko, MySQL, Microservices, etc.",
+    tags: ["kotlin"],
   },
   {
     years: "2019 — 2022",
@@ -36,6 +51,7 @@ const experience = [
       "<li><b>Python</b>, MySQL, Docker, Kubernetes, RabbitMQ, Microservices</li>" +
       "<li><b>Angular</b>, Jasmine, GraphQL</li>" +
       "</ul>",
+    tags: ["python", "angular"],
   },
   {
     years: "03 — 08/2019",
@@ -46,6 +62,7 @@ const experience = [
     description: "Research Institute with a main focus on handling emergencies projects. " +
       "Conducted research on Computer Vision and Natural Language Processing methods, " +
       "in the field of Deep Learning. ",
+    tags: ["python", "react"],
   },
   {
     years: "2016 — 2018",
@@ -54,6 +71,7 @@ const experience = [
     institution: "United Academics",
     institutionWeb: "https://www.ua-magazine.com/",
     description: "Developed their Open Access Library using <b>Python</b> (Django framework), <b>React</b>, and MongoDB.",
+    tags: ["python", "django", "react"],
   },
   {
     years: "01 — 06/2016",
@@ -62,6 +80,7 @@ const experience = [
     institution: "Sugerendo",
     institutionWeb: "https://www.sugerendo.com/",
     description: "E-commerce consultancy specialized in Magento.",
+    tags: ["html", "css", "javascript"],
   },
 ]
 
@@ -95,6 +114,20 @@ const education = [
 @include phone {
   .cv-container {
     margin-top: 0;
+  }
+}
+.me {
+  margin-bottom: 40px;
+  display: flex;
+  img {
+    width: 120px;
+    border-radius: 50%;
+  }
+  & .name-container {
+    text-align: left;
+    & p.name {
+      font-size: $text-xl;
+    }
   }
 }
 </style>
