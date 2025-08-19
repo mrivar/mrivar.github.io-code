@@ -19,6 +19,9 @@
       <NuxtLink to="https://letterboxd.com/martin__rv/" class="text" target="_blank">
         <Icon name="simple-icons:letterboxd"></Icon>
       </NuxtLink>
+      <NuxtLink to="https://www.goodreads.com/martin-riva/" class="text" target="_blank">
+        <Icon name="simple-icons:goodreads"></Icon>
+      </NuxtLink>
     </div>
     <div></div>
   </footer>
