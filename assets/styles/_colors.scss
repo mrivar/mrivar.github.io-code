@@ -10,6 +10,8 @@ $light-gray: #CCC;
 $light-red: #F36161;
 $light-purple: #677BC4;
 $light-light-gray: #F6F6F6;
+$strava: #FC5200;
+$strava-dark: #FF0001;
 
 // FIGMA COLORS
 $dark-gray: #252734;
@@ -21,6 +23,10 @@ $snow: #FFFBFE;
 $skull-white: #EBEBEC;
 
 $latex-gray: #4D4D4D;
+
+// rgba colors
+$white-half: rgba(255, 255, 255, 0.6);
+$gray-bg: rgba(240, 243, 255, 0.04);
 
 .color-snow {
   color: $snow;

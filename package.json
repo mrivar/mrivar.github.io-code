@@ -16,7 +16,7 @@
     "@nuxt/icon": "^1.5.2",
     "@nuxtjs/color-mode": "^3.5.1",
     "@pinia/nuxt": "^0.5.4",
-    "nuxt": "^3.13.0",
+    "nuxt": "^3.16.0",
     "pinia": "^2.2.2",
     "sass-embedded": "^1.79.4",
     "vue": "latest",

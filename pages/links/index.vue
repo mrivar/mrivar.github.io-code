@@ -1,3 +1,10 @@
+<template>
+  <div>
+    <TheTitle>Links</TheTitle>
+    <LinkList :links="links" />
+  </div>
+</template>
+
 <script setup lang="ts">
 const links = [
   {
@@ -31,11 +38,17 @@ const links = [
     path: "https://letterboxd.com/martin__rv/",
     target: "_blank"
   },
+  {
+    name: "Goodreads",
+    icon: "simple-icons:goodreads",
+    path: "https://www.goodreads.com/martin-riva",
+    target: "_blank"
+  },
   /*{
     name: "Website (you're already on it!)",
     icon: "tabler:world",
-    path: "/",,
-    target: "_blank'
+    path: "/",
+    target: "_blank"
   },*/
   /*{
     name: "Spotify",
@@ -44,13 +57,6 @@ const links = [
   }*/
 ]
 </script>
-
-<template>
-  <div>
-    <TheTitle>Links</TheTitle>
-    <LinkList :links="links" />
-  </div>
-</template>
 
 <style scoped lang="scss">
 </style>

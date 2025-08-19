@@ -90,6 +90,7 @@ export default defineNuxtConfig({
         'devicon-plain:linkedin',
         'simple-icons:strava',
         'simple-icons:letterboxd',
+        'simple-icons:goodreads',
       ],
       // scan all components in the project and include icons
       scan: true,

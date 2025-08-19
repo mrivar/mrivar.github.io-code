@@ -1,12 +1,42 @@
+<template>
+  <div class="cv-container">
+    <div class="me">
+      <img src="@/public/me.jpg"  alt="me"/>
+      <div class="name-container">
+        <p class="name">
+          <span class="semi-bold">Martín de la Riva</span>
+        </p>
+        <p class="sub">
+          Full Stack Developer
+        </p>
+        <p class="city">
+          Barcelona, Spain
+        </p>
+      </div>
+    </div>
+    <CvBlock title="about me">
+      I’m a Developer with a Master’s in Artificial Intelligence, with 9+ years of experience in building
+      scalable backend systems and ML solutions. Passionate about clean code, distributed
+      systems, and meaningful tech.<br><br>
+      What I value in a job opportunity is <b class="b">how interesting the project/s is</b> (technologically and/or
+      socially), a <b class="b">good working environment</b> (knowledge sharing, teamwork) and a <b class="b">modern company culture</b>
+      (remote work, flexible hours, personal development, etc.).
+    </CvBlock>
+    <CvBlock title="experience" :items="experience" />
+    <CvBlock title="education" :items="education"/>
+  </div>
+</template>
+
 <script setup lang="ts">
 const experience = [
   {
     years: "2022 — now",
-    yearSum: "2 years",
+    yearSum: "3 years",
     position: "Back End Developer",
     institution: "Devo",
     institutionWeb: "https://www.devo.com/",
-    description: "Currently working in Devo using Kotlin",
+    description: "Currently developing Devo’s big data product (a massive distributed DB), " +
+      "using <b>Kotlin</b>, RabbitMQ, Akka, Pekko, MySQL, Microservices, etc.",
     tags: ["kotlin"],
   },
   {
@@ -14,10 +44,13 @@ const experience = [
     yearSum: "3 years",
     position: "Full Stack Developer & Squad Lead",
     institution: "Taiger",
-    institutionWeb: "https://www.taiger.com/",
-    description: "Worked in TAIGER’s main poduct, IDP.\n" +
-      "• Angular, Jasmine, GraphQL\n" +
-      "• Python, MySQL, Docker, Kubernetes, RabbitMQ, Microservices",
+    //institutionWeb: "https://www.taiger.com/",
+    institutionWeb: "https://www.linkedin.com/company/taiger/",
+    description: "Managed the CV Team of TAIGER’s AI SDK product, allowing users to create ML models to extract text & data.<br>" +
+      "<ul>" +
+      "<li><b>Python</b>, MySQL, Docker, Kubernetes, RabbitMQ, Microservices</li>" +
+      "<li><b>Angular</b>, Jasmine, GraphQL</li>" +
+      "</ul>",
     tags: ["python", "angular"],
   },
   {
@@ -26,7 +59,9 @@ const experience = [
     position: "Artificial Intelligence Researcher",
     institution: "LINKS",
     institutionWeb: "https://linksfoundation.com/en/",
-    description: "Research Institute. Worked on research projects on Computer Vision and Natural Language Processing, using Deep Learning techniques.",
+    description: "Research Institute with a main focus on handling emergencies projects. " +
+      "Conducted research on Computer Vision and Natural Language Processing methods, " +
+      "in the field of Deep Learning. ",
     tags: ["python", "react"],
   },
   {
@@ -34,13 +69,13 @@ const experience = [
     yearSum: "2 years",
     position: "Full Stack Developer",
     institution: "United Academics",
-    institutionWeb: "https://www.ua-foundation.org/",
-    description: "Development using React, Django and MongoDB.",
+    institutionWeb: "https://www.ua-magazine.com/",
+    description: "Developed their Open Access Library using <b>Python</b> (Django framework), <b>React</b>, and MongoDB.",
     tags: ["python", "django", "react"],
   },
   {
-    years: "01 — 08/2016",
-    yearSum: "8 months",
+    years: "01 — 06/2016",
+    yearSum: "6 months",
     position: "Front End Developer Intern",
     institution: "Sugerendo",
     institutionWeb: "https://www.sugerendo.com/",
@@ -69,38 +104,17 @@ const education = [
 ]
 </script>
 
-<template>
-  <div class="cv-container">
-    <div class="me">
-      <img src="@/public/me.jpg"  alt="me"/>
-      <div class="name-container">
-        <p class="name">
-          <span class="semi-bold">Martín de la Riva</span>
-        </p>
-        <p class="sub">
-          Full Stack Developer
-        </p>
-        <p class="city">
-          Barcelona, Spain
-        </p>
-      </div>
-    </div>
-    <CvBlock title="about me">
-      I’m a Developer with a Master’s in Artificial Intelligence. With around 8 years of experience
-      in both frontend and backend, I love developing apps and learning new technologies.<br><br>
-      What I value in a job opportunity is <b>how interesting the project/s is</b> (technologically and/or
-      socially), a <b>good working environment</b> (knowledge sharing, teamwork) and a <b>modern company culture</b>
-      (remote work, flexible hours...).
-    </CvBlock>
-    <CvBlock title="experience" :items="experience" />
-    <CvBlock title="education" :items="education"/>
-  </div>
-</template>
-
 <style scoped lang="scss">
 .cv-container {
   justify-self: center;
-  max-width: 500px;
+  margin-top: 50px;
+  max-width: 650px;
+  font-size: $text-m;
+}
+@include phone {
+  .cv-container {
+    margin-top: 0;
+  }
 }
 .me {
   margin-bottom: 40px;
