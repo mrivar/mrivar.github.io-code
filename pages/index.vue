@@ -7,7 +7,7 @@
     <div class="grid-right">
       <h2 class="subtitle text">
         Welcome to my site!<br>
-        I am a Full Stack Developer with 8+ years of experience.<br>
+        I am a Full Stack Developer with 9+ years of experience.<br>
         I enjoy building both the front end and back end of applications.
       </h2>
     </div>
