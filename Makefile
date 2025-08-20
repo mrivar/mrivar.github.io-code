@@ -22,3 +22,7 @@ build:
 build_github_pages:
 	@echo "Building application for Github Pages..."
 	npx nuxt build --preset github_pages
+
+deploy:
+	@echo "Deploying to Github Pages..."
+	./deploy.sh
