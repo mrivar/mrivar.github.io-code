@@ -3,6 +3,7 @@ import { defineNuxtConfig } from 'nuxt/config';
 // boost performance: https://dev.to/hakimov_dev/top-10-nuxtjs-secrets-to-boost-your-apps-performance-564d
 export default defineNuxtConfig({
   // mode: 'universal',
+  // debug: true,
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   // auto-import components based only on its name, not path
