@@ -14,7 +14,7 @@
         <div class="years years-phone">
           {{ item.years }}
         </div>
-        <p v-html="item.description"></p>
+        <div class="job-description" v-html="item.description"></div>
       </div>
     </NuxtLink>
   </div>
@@ -45,10 +45,10 @@ class Item {
 .cv-block {
   display: grid;
   justify-content: stretch;
-  margin: auto auto 32px;
+  margin: auto auto 40px;
 
   & .cv-block-title {
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 
   & p.cv-block-description {
@@ -61,13 +61,17 @@ class Item {
     grid-template-columns: 103px auto;
     column-gap: 30px;
     text-align: left;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 
-    padding: 20px;
+    padding: 24px 22px;
     background-color: $gray-bg;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 10px 10px -5px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    html.dark-mode & {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
 
     & .years {
       color: $gray3;
@@ -88,10 +92,10 @@ class Item {
       html.dark-mode & .job-title {
         color: $snow;
       }
-      & p {
+      & .job-description {
         color: $gray2;
       }
-      html.dark-mode & p {
+      html.dark-mode & .job-description {
         color: $white-half;
       }
     }

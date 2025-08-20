@@ -21,7 +21,8 @@
 .cv-container {
   justify-self: center;
   margin-top: 50px;
-  max-width: 650px;
+  margin-bottom: 24px;
+  max-width: 700px;
   font-size: $text-m;
 }
 @include phone {

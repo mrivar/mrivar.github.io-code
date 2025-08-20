@@ -20,7 +20,7 @@ const experience = [
     institution: "Taiger",
     //institutionWeb: "https://www.taiger.com/",
     institutionWeb: "https://www.linkedin.com/company/taiger/",
-    description: "Managed the CV Team of TAIGER’s AI SDK product, allowing users to create ML models to extract text & data.<br>" +
+    description: "Managed the CV Team of TAIGER’s AI SDK product, allowing users to create ML models to extract text & data." +
       "<ul>" +
       "<li><b>Python</b>, MySQL, Docker, Kubernetes, RabbitMQ, Microservices</li>" +
       "<li><b>Angular</b>, Jasmine, GraphQL</li>" +
