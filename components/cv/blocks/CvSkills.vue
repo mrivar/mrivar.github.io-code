@@ -1,5 +1,6 @@
 <template>
-  <CvBlock title="skills">
+  <div class="cv-block">
+    <CvTitle class="cv-block-title">skills</CvTitle>
     <div class="skills" ref="skills">
       <div class="skills-grid">
         <CvSkillsBlock title="frontend" :items="frontend" />
@@ -8,7 +9,7 @@
       </div>
     </div>
     <div class="skills-filler" ref="skills-filler"></div>
-  </CvBlock>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -42,6 +43,14 @@ watchEffect(() => {
 </script>
 
 <style scoped lang="scss">
+.cv-block {
+  margin: auto auto 80px;
+}
+
+.cv-block-title {
+  margin-bottom: 24px;
+}
+
 .skills {
   // positioning
   position: absolute;
