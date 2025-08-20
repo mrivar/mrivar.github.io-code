@@ -8,6 +8,7 @@
       socially), a <b class="b">good working environment</b> (knowledge sharing, teamwork) and a <b class="b">modern company culture</b>
       (remote work, flexible hours, personal development, etc.).
     </CvBlock>
+    <CvSkills />
     <CvExperience />
     <CvEducation />
     <CvPublications />

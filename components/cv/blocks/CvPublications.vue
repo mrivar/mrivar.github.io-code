@@ -13,7 +13,7 @@ const publications = [
     description:
       'After finishing my M.Sc., my thesis supervisor and I wrote a scientific\n' +
       'paper based on my thesis, which we published and presented in ICCV 2019\n' +
-      '(International Conference on Computer Vision) in October 2019:\n' +
+      '(International Conference on Computer Vision) in October 2019:<br>\n' +
       'Implementation of a regularization technique that uses Bayesian methods in\n' +
       '3D ConvNets to combat overfitting, learning more from less videos in Action\n' +
       'Recognition challenges.'
