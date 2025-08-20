@@ -20,6 +20,7 @@ const others = [
   'clean code',
   'solid principles',
   'problem solving',
+  'agile',
   'critical thinking',
   'communication'
 ]
@@ -47,13 +48,13 @@ watchEffect(() => {
   left: 0;
   width: 100%;
   // others
-  padding: 48px;
+  padding: 80px 48px;
   margin-top: 24px;
   background-color: $primary-color;
-  box-shadow: inset 0 20px 25px rgba(0, 0, 0, 0.1),
-    inset 0px -20px 25px rgba(0, 0, 0, 0.1),
-    inset 0 10px 10px rgba(0, 0, 0, 0.04),
-    inset 0px -10px 10px rgba(0, 0, 0, 0.04);
+  box-shadow: inset 0 20px 25px rgba(0, 0, 0, 0.15),
+    inset 0px -20px 25px rgba(0, 0, 0, 0.15),
+    inset 0 10px 10px rgba(0, 0, 0, 0.06),
+    inset 0px -10px 10px rgba(0, 0, 0, 0.06);
 }
 
 .skills-filler {
@@ -71,9 +72,14 @@ watchEffect(() => {
 }
 
 @include phone {
+  .skills {
+    padding: 48px;
+  }
+
   .skills-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 75vw;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
     row-gap: 32px;
   }
 }

@@ -18,7 +18,7 @@ input:where([type='submit']) {
   color: $gray3;
   transition: color 0.2s ease-in-out;
 
-  //&.router-link-active,
+  &.router-link-active,
   //&:focus,
   &:hover {
     color: $dark-gray;
