@@ -4,7 +4,7 @@
     <p class="cv-block-description text" v-if="$slots.default" >
       <slot />
     </p>
-    <NuxtLink v-for="item in items" :key="item.id" class="cv-block-item text" :to="item.institutionWeb">
+    <NuxtLink v-for="item in items" :key="item.id" class="cv-block-item box-1 text" :to="item.institutionWeb">
       <div class="years years-desktop">
         {{ item.years }}<br>
         <span v-if="item.yearSum">( {{ item.yearSum }} )</span>
@@ -64,14 +64,6 @@ class Item {
     margin-bottom: 32px;
 
     padding: 24px 22px;
-    background-color: $gray-bg;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 10px 10px -5px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-
-    html.dark-mode & {
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
 
     & .years {
       color: $gray3;

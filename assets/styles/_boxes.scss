@@ -1,0 +1,10 @@
+.box-1 {
+  background-color: $gray-bg;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0 10px 10px -5px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px;
+  //border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+html.dark-mode .box-1 {
+  //border: 1px solid rgba(255, 255, 255, 0.1);
+}
