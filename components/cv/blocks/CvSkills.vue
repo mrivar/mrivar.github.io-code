@@ -44,6 +44,7 @@ watchEffect(() => {
 
 <style scoped lang="scss">
 .cv-block {
+  text-align: left;
   margin: auto auto 80px;
 }
 
@@ -57,7 +58,7 @@ watchEffect(() => {
   left: 0;
   width: 100%;
   // others
-  padding: 80px 48px;
+  padding: 64px 48px;
   margin-top: 24px;
   background-color: $primary-color;
   box-shadow: inset 0 20px 25px rgba(0, 0, 0, 0.15),
@@ -74,10 +75,16 @@ watchEffect(() => {
   // griding
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 32px;
+  column-gap: 48px;
   // others
-  max-width: 1100px;
+  max-width: 1150px;
   margin: auto;
+}
+
+@include tablet {
+  .skills-grid {
+    column-gap: 32px;
+  }
 }
 
 @include phone {

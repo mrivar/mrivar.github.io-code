@@ -17,8 +17,8 @@ const { title, items } = defineProps({
 
 <style scoped lang="scss">
 .skill-block {
-  background-color: $purple-light;
-  padding: 24px;
+  background-color: $purple-light-2;
+  padding: 24px 32px 32px;
 }
 
 .title {
@@ -34,6 +34,16 @@ const { title, items } = defineProps({
 
 .skill {
   padding: 8px 16px;
-  background-color: $purple-light;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+html.dark-mode {
+  & .skill-block {
+    background-color: $purple-light;
+  }
+
+  & .skill {
+    background-color: $purple-light;
+  }
 }
 </style>
