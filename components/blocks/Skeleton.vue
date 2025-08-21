@@ -38,6 +38,7 @@
   margin-top: 10px;
   min-width: 180px;
   margin-bottom: 24px;
+  min-height: 40px;
 }
 
 .skeleton-container {
@@ -50,7 +51,7 @@
 
 .bone {
   width: 50px;
-  height: 40px;
+  height: 20px;
   border-radius: 5px;
   background-color: #DDD;//#D6D9E0;
 }

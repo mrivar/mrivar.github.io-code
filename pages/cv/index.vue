@@ -1,5 +1,5 @@
 <template>
-  <div class="cv-container">
+  <div class="content-container">
     <template v-if="!mounted" class="text">
       <Skeleton />
     </template>
@@ -30,17 +30,4 @@ onMounted(() => {
 })
 </script>
 
-<style scoped lang="scss">
-.cv-container {
-  justify-self: center;
-  margin-top: 50px;
-  margin-bottom: 24px;
-  max-width: 700px;
-  font-size: $text-m;
-}
-@include phone {
-  .cv-container {
-    margin-top: 0;
-  }
-}
-</style>
+<style scoped lang="scss"></style>

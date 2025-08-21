@@ -62,7 +62,7 @@ footer {
 
 @include phone {
   footer {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
 }
 </style>
