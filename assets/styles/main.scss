@@ -50,19 +50,6 @@ input {
   cursor: pointer;
 }
 
-.main-container {
-  margin: 0 auto;
-  min-width: 70vw;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-@include phone {
-  .main-container {
-    width: 75vw;
-  }
-}
 .centered {
   align-items: center;
 }
@@ -77,4 +64,31 @@ input {
   width: 13px;
   height: 13px;
   border-radius: 50%;
+}
+
+.main-container {
+  margin: 0 auto;
+  min-width: 70vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+@include phone {
+  .main-container {
+    width: 75vw;
+  }
+}
+
+.content-container {
+  justify-self: center;
+  margin-top: 50px;
+  margin-bottom: 24px;
+  max-width: 700px;
+  font-size: $text-m;
+}
+@include phone {
+  .content-container {
+    margin-top: 0;
+  }
 }
