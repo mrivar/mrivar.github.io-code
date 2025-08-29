@@ -42,7 +42,7 @@ const experience = [
     position: "Full Stack Developer",
     institution: "United Academics",
     institutionWeb: "https://www.ua-magazine.com/",
-    description: "Developed their Open Access Library using <b>Python</b> (Django framework), <b>React</b>, and MongoDB.",
+    description: "Developed an Open Access Library using <b>Python</b> (Django framework), <b>React</b>, and MongoDB.",
   },
   {
     years: "01 — 06/2016",

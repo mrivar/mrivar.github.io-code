@@ -54,11 +54,16 @@ export default defineNuxtConfig({
    ** Nuxt.js modules
    * '@nuxt/image': Optimize Images: deliver images in the appropriate
    * format, size, and quality based on the user's device.
+   * '@nuxtjs/color-mode': Dark and light color mode.
+   * '@pinia/nuxt': Nuxt store (https://pinia.vuejs.org/introduction.html)
+   * '@nuxt/icon': Icon module
+   * 'nuxt-gtag': Google Analytics plugin
    */
   modules: [
     '@nuxtjs/color-mode',
     '@pinia/nuxt',
     '@nuxt/icon',
+    'nuxt-gtag'
   ],
   colorMode: {
     preference: 'system', // default value of $colorMode.preference
@@ -87,6 +92,9 @@ export default defineNuxtConfig({
       // guard for uncompressed bundle size, will fail the build if exceeds
       sizeLimitKb: 256,
     },
+  },
+  gtag: {
+    id: 'G-6ZGWRSH2KW'
   },
   /*
    ** Build configuration

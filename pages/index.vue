@@ -42,7 +42,7 @@
   .grid-columns-container {
     padding-top: 0;
     grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
     grid-template-areas: "left""right";
   }
   .grid-right {
