@@ -30,16 +30,35 @@ const skills = useTemplateRef<HTMLInputElement>('skills')
 const skillsFiller = useTemplateRef<HTMLInputElement>('skills-filler')
 let skillsHeight: Number = -1
 
-watchEffect(() => {
-  if (skills.value) {
-    skillsHeight = skills.value?.offsetHeight
-    console.debug('updated height')
-  }
-  if (skillsFiller.value && skillsHeight != -1) {
+let observer: ResizeObserver | null = null
+
+const handleResize = (entries: ResizeObserverEntry[]) => {
+  console.debug("resize event")
+  if (
+    skillsFiller.value
+    && skills.value
+    && skillsHeight != skills.value.offsetHeight
+  ) {
+    skillsHeight = skills.value.offsetHeight
+    console.debug("set new height:" + skillsHeight + "px")
     skillsFiller.value.style.height = skillsHeight + 'px'
-    console.debug('set height ' + skillsHeight + 'px')
+  }
+}
+
+onMounted(() => {
+  if (skills.value) {
+    observer = new ResizeObserver(handleResize)
+    observer.observe(skills.value)
   }
 })
+
+onBeforeUnmount(() => {
+  if (observer && skills.value) {
+    observer.unobserve(skills.value)
+    observer.disconnect()
+  }
+})
+
 </script>
 
 <style scoped lang="scss">

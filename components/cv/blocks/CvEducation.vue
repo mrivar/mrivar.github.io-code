@@ -16,8 +16,8 @@ const education = [
     position: "BSc. Computer Science and Engineering",
     institution: "Universidad Carlos III de Madrid",
     institutionWeb: "https://www.uc3m.es/ss/Satellite/Grado/en/Detalle/Estudio_C/1371212562160/1371212987094/Bachelor_s_Degree_in_Computer_Science_and_Engineering",
-    description: "Specialization in Computation and Artificial Intelligence.\n" +
-      "Erasmus in Vienna (TU Wien) and Warsaw (Politechnika Waszawska).\n" +
+    description: "Specialization in Computation and Artificial Intelligence.<br>" +
+      "Erasmus in Vienna (TU Wien) and Warsaw (Politechnika Waszawska).<br>" +
       "Thesis: E-commerce website embedded to a Data Visualization app - Tableau.",
   },
 ]
