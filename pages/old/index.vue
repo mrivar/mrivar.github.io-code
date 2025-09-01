@@ -1,9 +1,3 @@
-<script setup lang="ts">
-definePageMeta({
-  layout: 'empty'
-})
-</script>
-
 <template>
   <div class="main-container centered">
     <div>
@@ -13,6 +7,12 @@ definePageMeta({
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+definePageMeta({
+  layout: 'empty'
+})
+</script>
 
 <style lang="scss">
 html {

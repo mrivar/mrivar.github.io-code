@@ -94,7 +94,8 @@ export default defineNuxtConfig({
     },
   },
   gtag: {
-    id: 'G-6ZGWRSH2KW'
+    enabled: process.env.NODE_ENV === 'production',
+    id: '' // automatically set at runtime using process.env.NUXT_PUBLIC_GTAG_ID
   },
   /*
    ** Build configuration
