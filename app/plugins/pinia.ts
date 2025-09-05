@@ -1,4 +1,4 @@
-import { useMainStore } from '~/store'
+/**import { useMainStore } from '~/store'
 
 export default defineNuxtPlugin(({ $pinia }) => {
   return {
@@ -7,3 +7,4 @@ export default defineNuxtPlugin(({ $pinia }) => {
     }
   }
 })
+*/
