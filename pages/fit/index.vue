@@ -7,8 +7,8 @@
         Alternatively, you can also create routes from scratch that you haven't been able to record.
       </h2>
       <div class="button-container">
-        <button class="fit-button">Upload file</button>
-        <button class="fit-button">Create new route</button>
+        <NuxtLink to="/fit/editor" class="fit-button">Upload file</NuxtLink>
+        <NuxtLink to="/fit/editor" class="fit-button">Create new route</NuxtLink>
       </div>
     </div>
     <div class="grid-right">

@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="header-container">
-      <NuxtLink to="/" class="text">
+      <NuxtLink to="/fit/" class="text">
         <span class="light">ctr</span>
         <span class="light">+alt+</span>
         <span class="bold">fit</span>

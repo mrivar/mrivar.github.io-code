@@ -26,8 +26,8 @@ const others = [
   'communication'
 ]
 
-const skills = useTemplateRef<HTMLInputElement>('skills')
-const skillsFiller = useTemplateRef<HTMLInputElement>('skills-filler')
+const skills = useTemplateRef<HTMLDivElement>('skills')
+const skillsFiller = useTemplateRef<HTMLDivElement>('skills-filler')
 let skillsHeight: Number = -1
 
 let observer: ResizeObserver | null = null

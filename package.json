@@ -16,6 +16,8 @@
     "@nuxt/icon": "^1.5.2",
     "@nuxtjs/color-mode": "^3.5.1",
     "@pinia/nuxt": "^0.5.4",
+    "maplibre-gl": "^5.7.0",
+    "maplibre-gl-draw": "^1.6.9",
     "nuxt": "^3.16.0",
     "nuxt-gtag": "4.0.0",
     "pinia": "^2.2.2",
