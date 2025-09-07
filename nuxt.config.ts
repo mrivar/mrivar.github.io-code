@@ -61,9 +61,11 @@ export default defineNuxtConfig({
    */
   modules: [
     '@nuxtjs/color-mode',
-    '@pinia/nuxt',
     '@nuxt/icon',
-    'nuxt-gtag'
+    '@nuxtjs/tailwindcss',
+    '@pinia/nuxt',
+    'nuxt-gtag',
+    'shadcn-nuxt'
   ],
   colorMode: {
     preference: 'system', // default value of $colorMode.preference
@@ -80,6 +82,7 @@ export default defineNuxtConfig({
         'heroicons-outline:moon',
         'heroicons-outline:sun',
         'grommet-icons:github',
+        'grommet-icons:run',
         'devicon-plain:linkedin',
         'simple-icons:strava',
         'simple-icons:letterboxd',
@@ -97,6 +100,17 @@ export default defineNuxtConfig({
     enabled: process.env.NODE_ENV === 'production',
     id: '' // automatically set at runtime using process.env.NUXT_PUBLIC_GTAG_ID
   },
+  shadcn: {
+    /**
+     * Prefix for all the imported component
+     */
+    prefix: '',
+    /**
+     * Directory that the component lives in.
+     * @default "./components/ui"
+     */
+    componentDir: './components/ui'
+  },
   /*
    ** Build configuration
    */
@@ -104,8 +118,8 @@ export default defineNuxtConfig({
     // Optmize CSS
     // extractCSS: true,
   },
-  generate: {
+  /*generate: {
     // fix github 404.html
-    // fallback: true
-  },
+    fallback: true
+  },*/
 })

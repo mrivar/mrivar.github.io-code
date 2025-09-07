@@ -5,3 +5,42 @@
   color: $snow;
   font-size: 18px;
 }
+
+.rounded {
+  border-radius: 50px;
+}
+
+.maplibregl-ctrl-geocoder {
+  max-width: none !important;
+  margin: 10px 0 0 140px !important;
+
+  & form {
+    width: 450px !important;
+    max-width: 450px !important;
+    border-radius: 10px !important;
+  }
+
+  .input-group {
+    border-radius: 10px !important;
+  }
+
+  & .input-group:focus-within {
+    outline: 2px solid $strava !important; /* Strava orange */
+  }
+
+  & input {
+    cursor: text;
+    padding: 8px !important;
+    border: none !important;
+  }
+
+  & input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+
+  & ul.options li.selected {
+    cursor: pointer;
+    animation: none !important;
+  }
+}

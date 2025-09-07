@@ -8,12 +8,16 @@ export const useMapStyles = (
   }
 ) => {
   const applyStyles = () => {
-    // inactive line
-    if (options.lineInactive && map.getLayer("gl-draw-line-inactive")) {
+    //console.log(map.getLayersOrder().filter((el) => el.includes("line")))
+    // inactive line: both hot + cold
+    if (options.lineInactive) {
       const { color, width, opacity } = options.lineInactive
-      if (color) map.setPaintProperty("gl-draw-line-inactive", "line-color", color)
-      if (width) map.setPaintProperty("gl-draw-line-inactive", "line-width", width)
-      if (opacity) map.setPaintProperty("gl-draw-line-inactive", "line-opacity", opacity)
+      ;["gl-draw-line-inactive.cold", "gl-draw-line-inactive.hot",
+        "gl-draw-line-static.cold", "gl-draw-line-static.hot"].forEach((layerId) => {
+        if (color) map.setPaintProperty(layerId, "line-color", color)
+        if (width) map.setPaintProperty(layerId, "line-width", width)
+        if (opacity) map.setPaintProperty(layerId, "line-opacity", opacity)
+      })
     }
 
     // active line: both hot + cold
